@@ -1,0 +1,7 @@
+~mods/
+Project_Plague-Windows/
+Project_Plague-WinGDK/
+*.bat
+*.exe
+*.pak
+*.lnk
