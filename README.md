@@ -78,12 +78,12 @@ High - Higher quality from vanilla.
 The game looks significantly different with Lumen turned off. I have tried to minimize the boiling and flicker as much as possible, but higher settings really tank framerate.
 
 Off - Disabled Lumen.  
-Low - Basic lumen with disabled bounce lighting.  
+Low - Distance Field Ambient Occlusion.
 Mid - Full lumen with some noise and jitter.  
 High - More objects are traced, minimized jitter at the cost of obscene amounts FPS.  
 
 ## Ambient Occlusion (Unchanged)
-This setting weirdly doesn't respect the preset changes. This simply toggles between using ScreenSpaceBentNormal or DiffuseIndirectSSAO, both Lumen functions, mutually exclusive from each other. 
+This setting weirdly doesn't respect the preset changes. This simply toggles between using ScreenSpaceBentNormal (ShortRangeAO) or DiffuseIndirectSSAO (SSAO passthrough), mutually exclusive from each other. 
 
 # Reflection Quality
 Moved `r.AOGlobalDistanceField` to the Global Illumination setting. This enables bounce lighting and a higher quality version of Lumen's SSR with less occlusion artifacts. This setting now correctly adjusts how reflections look, whether lumen is on or not.
